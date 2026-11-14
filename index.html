@@ -111,7 +111,7 @@ ja:{title:"Sky キャンドルプランナー",themeSeason:"シーズンカラ�
 c:"キャンドル",h:"ハート",s:"シーズンキャンドル",a:"昇華キャンドル",t:"イベントチケット","Traveling Spirit":"旅する精霊","Group visit":"合同訪問",Event:"イベント","Pohon season":"シーズンのツリー","Spirit reguler":"通常の精霊"}};
 var LANG="id",LOC={id:"id-ID",en:"en-US",ja:"ja-JP"};
 try{LANG=localStorage.getItem("skylang")||""}catch(e){}
-if(!TR[LANG]){var nl=(navigator.language||"id").slice(0,2);LANG=TR[nl]?nl:"id"}
+if(!TR[LANG]){var nl=(navigator.language||"en").slice(0,2);LANG=TR[nl]?nl:"en"}
 function t(k,a){var s=(TR[LANG]||TR.id)[k];if(s==null)s=TR.id[k];if(s==null)s=k;(a||[]).forEach(function(v,i){s=s.split("{"+i+"}").join(v)});return s}
 var CUR={c:1,h:1,s:1,a:1,t:1},DEF_PER={c:0,h:0,s:0,a:0,t:0};
 var ICON={c:'<path d="M8 1c2 2.5 3 4 3 6a3 3 0 0 1-6 0c0-2 1-3.5 3-6zM6 9.5h4V15H6z"/>',h:'<path d="M8 14S2 10 2 6a3 3 0 0 1 6-1 3 3 0 0 1 6 1c0 4-6 8-6 8z"/>',s:'<path d="M8 1c2 2.5 3 4 3 6a3 3 0 0 1-6 0c0-2 1-3.5 3-6z"/><path d="M3 12h10v2H3z"/>',a:'<path d="M8 1l5 7-5 7-5-7z"/>',t:'<path d="M2 4h12v3a1.5 1.5 0 0 0 0 3v3H2v-3a1.5 1.5 0 0 0 0-3z"/>'};
